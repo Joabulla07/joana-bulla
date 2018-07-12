@@ -6,7 +6,7 @@ public class Entry {
     private String name;
     private static int IDGenerator=0;
     
-    public Entry(String name){
+    public Entry(String name, int id){
         this.id= IDGenerator++;
         this.name=name;
     }

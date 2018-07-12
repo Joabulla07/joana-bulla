@@ -1,4 +1,3 @@
-
 import java.util.LinkedList;
 import java.util.List;
 
@@ -10,18 +9,21 @@ private Entry entry;
 	public void newList(){
 		entryList =new LinkedList<Entry>(); //list of blog post
 	}
-	
-	public boolean newPost (Entry entry){
-        entryList.add(entry); 
-		return true;
+	public int getsize(){
+           return entryList.size();
+        }
+        
+	public int newPost (Entry e){
+        entryList.add(e);
+        return getsize();
 	}
 	
-	public boolean deletePost (int id){ 
+	public int deletePost (int id){ 
 		entryList.remove(id);
-		return true;
-	}
-	
-	public List<Entry> recentEntries (){
+		return getsize();
+        }
+        
+        public List<Entry> recentEntries (){
 		List<Entry> recentList;
 		recentList =new LinkedList<Entry>();
 		for (int i=0;i<10;i++){
