@@ -14,15 +14,15 @@ public class DataBaseConnection {
         private String user;
         private String password;
         
-        public builder seturl(String url){
+        public builder setUrl(String url){
             this.url=url;
             return this;
         }
-        public builder setuser(String user){
+        public builder setUser(String user){
             this.user=user;
             return this;
         }
-        public builder setpassword(String password){
+        public builder setPassword(String password){
             this.password=password;
             return this;
         }

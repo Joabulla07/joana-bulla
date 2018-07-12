@@ -17,7 +17,3 @@ public abstract class DatabaseConnection {
 	public abstract void construct();
 
 }
-
-//tiene que haber una UNICA factory que se llame DatabaseFactory
-//que herede el AbstractFactory, las unicas concretas son las de las BD (MySQL,Oracle, etc)
-//las clases de las BD heredan de DBConnection 

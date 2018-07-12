@@ -1,6 +1,6 @@
 import java.sql.Connection;
 
-public interface Proxy {
+public interface DBConnection {
 	public Connection getConnection(); 
 	public void closeConnection();
 }	
