@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany</groupId>
-    <artifactId>SimpleCart</artifactId>
+    <artifactId>UserServiceJoanna2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>SimpleCart</name>
+    <name>UserServiceJoanna2</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -27,6 +27,7 @@
     <artifactId>raml-generator-api</artifactId>
     <version>3.0.2</version>
 </dependency>
+
     </dependencies>
 
     <build>
