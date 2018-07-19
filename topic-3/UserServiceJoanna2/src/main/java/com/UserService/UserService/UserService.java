@@ -6,7 +6,7 @@ import java.util.Map;
 
 
 public class UserService {
-	private Map<Long, User> users = Database.getUsers();
+	private Map<Long, User> users = UserRepository.getUsers();
 	
 
 	public List<User> getUsers(){

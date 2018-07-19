@@ -1,9 +1,6 @@
 package com.UserService.UserService;
 
-import com.UserService.UserService.User;
-import com.UserService.UserService.User;
-import com.UserService.UserService.UserService;
-import com.UserService.UserService.UserService;
+
 import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -18,7 +15,7 @@ import javax.ws.rs.core.MediaType;
 
 
 @Path("user")
-public class MyResource {
+public class  UserController {
 	
     UserService userService = new UserService();
   

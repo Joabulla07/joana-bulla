@@ -2,7 +2,7 @@ package com.joanna.SimpleCart;
 
 
 
-public class Item extends ShoppingCart {
+public class Item  {   
     private String name;
     private int quantity;
     private float price;

@@ -1,6 +1,7 @@
 package com.joanna.SimpleCart;
 
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +11,7 @@ public class ShoppingCart  {
     private float totals;
 
     private List<Item> shoppingItems = new ArrayList<Item>();
+    private int size;
 
     public void addShoppingItem(Item shoppingCartItem) {
         shoppingCartItem.setShoppingCart(this);
@@ -37,25 +39,22 @@ public class ShoppingCart  {
     public void setTotal(float totals) {
         this.totals = totals;
     }
-
-    public Boolean doesContain(String itemName) {
-        return shoppingItems.contains(itemName);
+  
+    public int getsize() {
+        return size;
     }
     
-    public float checkout() {
-        float total = (float) 0.0;
+   public float checkout() {
+        float total = 0;
         for(Item item: shoppingItems){
-            if(item.equals("Bread")){
-                total += 1.0 * item.getQuantity();
-            }else if(item.equals("Milk")){
-                total += 0.6 * item.getQuantity();
-            }else if(item.equals("Banana")){
-                total += 0.4 * item.getQuantity();
+            total= total + ((item.getPrice())*(item.getQuantity()));
             }
-        }
-        return total;
+         return total;        
+       
     }   
 
-    }
+    
+}
+    
    
 

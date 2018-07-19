@@ -1,9 +1,10 @@
 package com.joanna.SimpleCart;
 
+
 public enum ItemEnum {
-    Bread ("Bread"),
-    Milk ("Milk"),
-    Banana ("Banana");
+    appleCost ("Apple"),
+    Orange ("Orange"),
+    bananaCost ("Banana");
 
     private final String value;
 
@@ -11,11 +12,4 @@ public enum ItemEnum {
     private ItemEnum(final String value) {
         this.value = value;
     }
-
-    
- 
-    public String toString() {
-        return value;
-    }
-
-} 
+}
